@@ -16,10 +16,7 @@ export default class visitationController {
    
     const currentDate = new Date();
     objectLogger.timeReceived = currentDate.toISOString().split('T')[0] +' | '+ currentDate.toLocaleTimeString();
-    objectLogger.method = method;
-    objectLogger.url = url;
-    objectLogger.dataRequest = data;
-    objectLogger.headersRequest = headers;
+    objectLogger.data = req.body;
    
     try {
 
